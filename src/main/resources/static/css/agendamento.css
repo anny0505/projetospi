@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Reset e Configurações Básicas */
+body, h1, ul, li, a, form, input, button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('/images/esporte-fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+/* Menu Superior */
+.menu {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.menu nav ul {
+	list-style: none;
+	display: flex;
+	gap: 330px;
+}
+
+.menu nav ul li a {
+	text-decoration: none;
+	color: #4CAF50; /* Verde padrão */
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+	color: #2196F3; /* Azul ao passar o mouse */
+}
+
+.botao-sair {
+	margin-left: auto;
+	color: #f44336; /* Vermelho padrão */
+	text-decoration: none;
+	font-size: 16px;
+	padding: 10px 20px;
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	transition: color 0.3s ease;
+}
+
+.botao-sair:hover {
+	color: #d32f2f; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Container Principal */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+/* Formulário */
+.formulario {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+}
+
+.titulo {
+	font-size: 24px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.campo {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.campo label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.campo input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+/* Botões */
+.botoes {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.botao {
+	padding: 10px 15px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 48%;
+	background-color: #808080; /* Cinza padrão */
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+.limpar:hover {
+	background-color: #f44336; /* Vermelho ao passar o mouse */
+}
+
+.agendar:hover {
+	background-color: #4CAF50; /* Verde ao passar o mouse */
+}
+
+/* Rodapé */
+.rodape {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	/* Reset e Configurações Básicas */ body , h1, ul, li, a, form, input,
+	button { margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+}
