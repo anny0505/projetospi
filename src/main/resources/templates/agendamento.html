@@ -23,7 +23,7 @@
     <main class="container">
         <section class="formulario">
             <h1 class="titulo">Agendamento</h1>
-            <form>
+            <form action="/agendamentos" method="post">
                 <div class="campo">
                     <label for="data">Data</label>
                     <input type="date" id="data" name="data">
@@ -39,10 +39,6 @@
                 <div class="campo">
                     <label for="evento">Evento</label>
                     <input type="text" id="evento" name="evento" placeholder="Digite o evento">
-                </div>
-                <div class="campo">
-                    <label for="responsavel">Responsável</label>
-                    <input type="text" id="responsavel" name="responsavel" placeholder="Digite o responsável">
                 </div>
                 <div class="botoes">
                     <button type="reset" class="botao limpar">Limpar</button>
