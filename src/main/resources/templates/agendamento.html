@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="Agendamento.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#" class="cadastro">Cadastro</a></li>
+                <li><a href="#" class="agendamento">Agendamento</a></li>
+            </ul>
+            <a href="#" class="botao-sair">Sair</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section class="formulario">
+            <h1 class="titulo">Agendamento</h1>
+            <form>
+                <div class="campo">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+                <div class="campo">
+                    <label for="local">Local</label>
+                    <input type="text" id="local" name="local" placeholder="Digite o local">
+                </div>
+                <div class="campo">
+                    <label for="evento">Evento</label>
+                    <input type="text" id="evento" name="evento" placeholder="Digite o evento">
+                </div>
+                <div class="campo">
+                    <label for="responsavel">Responsável</label>
+                    <input type="text" id="responsavel" name="responsavel" placeholder="Digite o responsável">
+                </div>
+                <div class="botoes">
+                    <button type="reset" class="botao limpar">Limpar</button>
+                    <button type="submit" class="botao agendar">Agendar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">Projetos PI</footer>
+</body>
+</html>
