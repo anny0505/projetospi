@@ -46,6 +46,11 @@ public class Agendamento {
 	public void setEvento(String evento) {
 		this.evento = evento;
 	}
+	@Override
+	public String toString() {
+		return "Agendamento [id=" + id + ", data=" + data + ", hora=" + hora + ", local=" + local + ", evento=" + evento
+				+ "]";
+	}
 	
 	
 
