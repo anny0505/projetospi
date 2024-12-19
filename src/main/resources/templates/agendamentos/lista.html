@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualizar Agendamentos</title>
+<link rel="stylesheet" href="/css/lista.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<nav>
+				<a href="#">Home</a> <a href="#">Cadastro</a> <a href="#">Agendamento</a>
+				<a href="#" class="sair">Sair</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h1>Visualize seu agendamento</h1>
+		<div class="tabela-container">
+			<table>
+				<thead>
+					<tr>
+					    <th>Id</th>
+						<th>Data</th>
+						<th>Local</th>
+						<th>Horário</th>
+						<th>Evento</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="a : ${agendamentos}">
+					    <td data-label="Id" th:text="${a.id}">1</td>
+						<td data-label="Data" th:text="${a.data}">26/06/2024</td>
+						<td data-label="Local" th:text="${a.local}">Quadra de vôlei</td>
+						<td data-label="Hora" th:text="${a.hora}">09:00 - 10:30</td>
+						<td data-label="Evento" th:text="${a.evento}">Jogo</td>
+						<td data-label="Ações">
+							<button class="delete">X</button>
+							<button class="edit">↺</button>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</main>
+</body>
+</html>

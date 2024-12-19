@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body {
+	font-family: "poppins";
+	background-image: url('/images/esporte-fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	color: blue;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Espaço entre os links */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 330px; /* Espaço entre os links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a.sair {
+    margin-left: auto; /* Coloca o "Sair" no canto direito */
+}
+
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tabela-container {
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 14px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+table th {
+    background-color: #444;
+    font-size: 16px;
+}
+
+table td.first-column {
+    background-color: #444;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Botões - cinza por padrão e muda na interação */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 0;
+    background-color: #ccc; /* Botões cinzas */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button.delete {
+    background-color: #ccc;
+}
+
+button.edit {
+    background-color: #ccc;
+}
+
+button:hover {
+    background-color: inherit; /* Retorna à cor original ao passar o mouse */
+}
+
+button.delete:hover {
+    background-color: red;
+}
+
+button.edit:hover {
+    background-color: blue;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 20px;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 50%;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+/* Cor inicial para Home, Cadastro e Agendamento */
+.header nav a:not(.sair) {
+    color: green; /* Verde inicial */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    margin: 0 20px; /* Espaçamento entre os itens */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Cor ao passar o mouse para Home, Cadastro e Agendamento */
+.header nav a:not(.sair):hover {
+    color: blue; /* Azul ao passar o mouse */
+}
+
+/* Cor inicial para o botão Sair */
+.header nav a.sair {
+    color: red; /* Vermelho inicial */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Cor ao passar o mouse para o botão Sair */
+.header nav a.sair:hover {
+    color: darkred; /* Vermelho mais escuro ao passar o mouse */
+}
